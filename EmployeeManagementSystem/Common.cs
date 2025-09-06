@@ -9,7 +9,7 @@ namespace EmployeeManagementSystem
 {
     internal class Common
     {
-        public const int WM_NCLBUTTONDOWN = 0X2;
+        public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
         [DllImportAttribute("user32.dll")]
