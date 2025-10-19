@@ -14,9 +14,13 @@ namespace EmployeeManagementSystem
         [STAThread]
         static void Main()
         {
+#if NET6_0_OR_GREATER
+            ApplicationConfiguration.Initialize();
+#else
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMotherForm());
+#endif
+            Application.Run(new LoginForm());
         }
     }
 }
