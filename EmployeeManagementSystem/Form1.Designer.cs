@@ -58,7 +58,7 @@
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideMenu.Location = new System.Drawing.Point(0, 50);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(166, 334);
+            this.pnlSideMenu.Size = new System.Drawing.Size(166, 454);
             this.pnlSideMenu.TabIndex = 0;
             // 
             // btnSettings
@@ -148,7 +148,7 @@
             this.pnlTitleBar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(744, 50);
+            this.pnlTitleBar.Size = new System.Drawing.Size(789, 50);
             this.pnlTitleBar.TabIndex = 1;
             this.pnlTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTitleBar_Paint);
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
@@ -169,7 +169,7 @@
             // btnMinimize
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.Location = new System.Drawing.Point(648, 12);
+            this.btnMinimize.Location = new System.Drawing.Point(693, 12);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(24, 24);
             this.btnMinimize.TabIndex = 2;
@@ -180,7 +180,7 @@
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(708, 12);
+            this.btnClose.Location = new System.Drawing.Point(753, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 24);
             this.btnClose.TabIndex = 1;
@@ -191,7 +191,7 @@
             // btnMaximize
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.Location = new System.Drawing.Point(678, 12);
+            this.btnMaximize.Location = new System.Drawing.Point(723, 12);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(24, 24);
             this.btnMaximize.TabIndex = 0;
@@ -204,7 +204,7 @@
             this.pnlStage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlStage.Location = new System.Drawing.Point(166, 50);
             this.pnlStage.Name = "pnlStage";
-            this.pnlStage.Size = new System.Drawing.Size(578, 334);
+            this.pnlStage.Size = new System.Drawing.Size(623, 454);
             this.pnlStage.TabIndex = 2;
             // 
             // frmMotherForm
@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(744, 384);
+            this.ClientSize = new System.Drawing.Size(789, 504);
             this.Controls.Add(this.pnlStage);
             this.Controls.Add(this.pnlSideMenu);
             this.Controls.Add(this.pnlTitleBar);

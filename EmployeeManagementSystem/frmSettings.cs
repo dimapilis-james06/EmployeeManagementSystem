@@ -85,8 +85,8 @@ namespace EmployeeManagementSystem
 
         private void dgvUsers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            string TemplatePath = @"C:\Users\John Eubert Manalo\Downloads\Employee_Details_Template.xlsx";
-            string SavePath = @"C:\Users\John Eubert Manalo\Downloads\Employee_Details_Template.xlsx";
+            string TemplatePath = @"C:\Users\James Dimapilis\Downloads\Employee_Details_Template.xlsx";
+            string SavePath = @"C:\Users\James Dimapilis\rt Downloads\Employee_Details_Template.xlsx";
 
             ExportCellFromDgv.ExportFromTemplate(TemplatePath,
         SavePath,

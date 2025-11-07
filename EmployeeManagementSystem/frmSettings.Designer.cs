@@ -63,7 +63,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(610, 442);
+            this.tabControl1.Size = new System.Drawing.Size(631, 452);
             this.tabControl1.TabIndex = 0;
             // 
             // tpageUserRegistration
@@ -73,7 +73,7 @@
             this.tpageUserRegistration.Location = new System.Drawing.Point(4, 22);
             this.tpageUserRegistration.Name = "tpageUserRegistration";
             this.tpageUserRegistration.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageUserRegistration.Size = new System.Drawing.Size(602, 416);
+            this.tpageUserRegistration.Size = new System.Drawing.Size(623, 426);
             this.tpageUserRegistration.TabIndex = 0;
             this.tpageUserRegistration.Text = "User Registration";
             this.tpageUserRegistration.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             this.dgvUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUsers.Location = new System.Drawing.Point(199, 3);
             this.dgvUsers.Name = "dgvUsers";
-            this.dgvUsers.Size = new System.Drawing.Size(400, 410);
+            this.dgvUsers.Size = new System.Drawing.Size(421, 420);
             this.dgvUsers.TabIndex = 1;
             this.dgvUsers.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentDoubleClick);
             // 
@@ -110,16 +110,17 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(196, 410);
+            this.panel1.Size = new System.Drawing.Size(196, 420);
             this.panel1.TabIndex = 0;
             // 
             // btnDownload
             // 
-            this.btnDownload.Location = new System.Drawing.Point(3, 382);
+            this.btnDownload.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDownload.Location = new System.Drawing.Point(105, 388);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(75, 23);
+            this.btnDownload.Size = new System.Drawing.Size(84, 27);
             this.btnDownload.TabIndex = 2;
-            this.btnDownload.Text = "download";
+            this.btnDownload.Text = "DOWNLOAD";
             this.btnDownload.UseVisualStyleBackColor = true;
             this.btnDownload.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -279,7 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 442);
+            this.ClientSize = new System.Drawing.Size(631, 452);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmSettings";
             this.Text = "frmSettings";
