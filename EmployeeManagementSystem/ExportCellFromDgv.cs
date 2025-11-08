@@ -65,10 +65,5 @@ namespace EmployeeManagementSystem
                 GC.Collect();
             }
         }
-
-        internal static void ExportFromTemplate(string templatePath, string savePath, string v1, object value1, string v2, object value2, string v3, object value3, string v4, object value4, string v5, object fullname, string v6, string v7)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

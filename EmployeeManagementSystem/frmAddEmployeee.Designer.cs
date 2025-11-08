@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAddEmployee = new System.Windows.Forms.Label();
             this.gboxInsertUpdate = new System.Windows.Forms.GroupBox();
             this.cmbSection = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -43,7 +44,9 @@
             this.txtEmployeeID = new System.Windows.Forms.TextBox();
             this.lblRequestorName = new System.Windows.Forms.Label();
             this.lblEmployeeNumber = new System.Windows.Forms.Label();
-            this.lblAddEmployee = new System.Windows.Forms.Label();
+            this.btnMaximize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gboxInsertUpdate.SuspendLayout();
             this.SuspendLayout();
@@ -51,12 +54,28 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.btnMinimize);
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.btnMaximize);
             this.panel1.Controls.Add(this.lblAddEmployee);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 45);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // lblAddEmployee
+            // 
+            this.lblAddEmployee.AutoSize = true;
+            this.lblAddEmployee.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddEmployee.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAddEmployee.Location = new System.Drawing.Point(15, 9);
+            this.lblAddEmployee.Name = "lblAddEmployee";
+            this.lblAddEmployee.Size = new System.Drawing.Size(170, 29);
+            this.lblAddEmployee.TabIndex = 0;
+            this.lblAddEmployee.Text = "Add Employee";
             // 
             // gboxInsertUpdate
             // 
@@ -205,16 +224,38 @@
             this.lblEmployeeNumber.TabIndex = 0;
             this.lblEmployeeNumber.Text = "Employee Number :";
             // 
-            // lblAddEmployee
+            // btnMaximize
             // 
-            this.lblAddEmployee.AutoSize = true;
-            this.lblAddEmployee.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddEmployee.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAddEmployee.Location = new System.Drawing.Point(15, 9);
-            this.lblAddEmployee.Name = "lblAddEmployee";
-            this.lblAddEmployee.Size = new System.Drawing.Size(170, 29);
-            this.lblAddEmployee.TabIndex = 0;
-            this.lblAddEmployee.Text = "Add Employee";
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.Location = new System.Drawing.Point(542, 10);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(24, 24);
+            this.btnMaximize.TabIndex = 15;
+            this.btnMaximize.Text = "🔳";
+            this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Location = new System.Drawing.Point(572, 10);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(24, 24);
+            this.btnClose.TabIndex = 16;
+            this.btnClose.Text = "✖️";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.Location = new System.Drawing.Point(512, 9);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(24, 24);
+            this.btnMinimize.TabIndex = 17;
+            this.btnMinimize.Text = "➖";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // frmAddEmployeee
             // 
@@ -253,5 +294,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ComboBox cmbSection;
         private System.Windows.Forms.Label lblAddEmployee;
+        private System.Windows.Forms.Button btnMaximize;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMinimize;
     }
 }

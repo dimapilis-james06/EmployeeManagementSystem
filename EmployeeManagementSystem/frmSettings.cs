@@ -78,15 +78,15 @@ namespace EmployeeManagementSystem
             lblNumber.ForeColor = Color.Green;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDownload_Click(object sender, EventArgs e)
         {
             ExportDgv.ExportToExcel(dgvUsers, "ExportedData_" + DateTime.Now.ToString("MM-dd-yyyy"));
         }
 
         private void dgvUsers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            string TemplatePath = @"C:\Users\James Dimapilis\Downloads\Employee_Details_Template.xlsx";
-            string SavePath = @"C:\Users\James Dimapilis\rt Downloads\Employee_Details_Template.xlsx";
+            string TemplatePath = @"C:\LOCALDB\Employee_Details_Template.xlsx";
+            string SavePath = @"C:\LOCALDB\Employee_Details_Template.xlsx";
 
             ExportCellFromDgv.ExportFromTemplate(TemplatePath,
         SavePath,

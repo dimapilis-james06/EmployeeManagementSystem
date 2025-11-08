@@ -12,6 +12,8 @@ namespace EmployeeManagementSystem
 {
     public partial class frmAddEmployeee : Form
     {
+        public string TransactionNo { get; internal set; }
+
         public frmAddEmployeee()
         {
             InitializeComponent();
@@ -154,7 +156,38 @@ namespace EmployeeManagementSystem
         }
         private void frmAddEmployeee_Load(object sender, EventArgs e)
         {
+            loadInputData();
+        }
 
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Common.ReleaseCapture();
+                Common.SendMessage(Handle, Common.WM_NCLBUTTONDOWN, Common.HT_CAPTION, 0);
+            }
         }
     }
 }

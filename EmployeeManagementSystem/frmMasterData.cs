@@ -17,7 +17,8 @@ namespace EmployeeManagementSystem
             InitializeComponent();
         }
 
-        public static string selectedTransaction, RequestorName, EmailAddress, Section, LocalNumber, EmployeeNumber;
+        public static string selectedTransaction, RequestorName, EmailAddress, Section, LocalNumber, EmployeeNumber, txtEmployeeID;
+
 
         private void dtgMasterData_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -39,11 +40,20 @@ namespace EmployeeManagementSystem
 
         private void btnEditData_Click(object sender, EventArgs e)
         {
-            frmAddEmployeee openForm = new frmAddEmployeee();
-            //openForm.gboxInsertUpdate.Location = new Point(35, 48);
-            //openForm.btnInsertUpdate.Text = "INSERT/UPDATE";
-            openForm.ShowDialog();
-            this.refreshData();
+
+            if (lblTransactionNo.Text == "<TRANSACTION NUMBER>")
+            {
+                MessageBox.Show("Please select a corresponding data.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            frmAddEmployeee OpenfrmAddEmployee = new frmAddEmployeee();
+            OpenfrmAddEmployee.TransactionNo = lblTransactionNo.Text;  // <-- add this line
+            OpenfrmAddEmployee.ShowDialog();
+            refreshData();
+
+
         }
         private void refreshData()
         {

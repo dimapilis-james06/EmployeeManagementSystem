@@ -78,11 +78,6 @@ namespace EmployeeManagementSystem
         }
         string selectedTransaction, RequestorName, EmailAddress, Section, LocalNumber, EmployeeNumber;
 
-        private void pnlTitleBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnSettings_Click(object sender, EventArgs e)
         {
             openChildForm(new frmSettings());

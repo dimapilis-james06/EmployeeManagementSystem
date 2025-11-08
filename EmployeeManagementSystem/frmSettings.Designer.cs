@@ -116,13 +116,13 @@
             // btnDownload
             // 
             this.btnDownload.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDownload.Location = new System.Drawing.Point(105, 388);
+            this.btnDownload.Location = new System.Drawing.Point(105, 375);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(84, 27);
             this.btnDownload.TabIndex = 2;
             this.btnDownload.Text = "DOWNLOAD";
             this.btnDownload.UseVisualStyleBackColor = true;
-            this.btnDownload.Click += new System.EventHandler(this.button1_Click);
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // cbSection
             // 
@@ -150,9 +150,9 @@
             this.lblNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumber.Location = new System.Drawing.Point(26, 314);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(59, 13);
+            this.lblNumber.Size = new System.Drawing.Size(48, 13);
             this.lblNumber.TabIndex = 14;
-            this.lblNumber.Text = "✓ Number";
+            this.lblNumber.Text = "Number";
             // 
             // lblMatch
             // 
@@ -160,9 +160,9 @@
             this.lblMatch.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatch.Location = new System.Drawing.Point(26, 287);
             this.lblMatch.Name = "lblMatch";
-            this.lblMatch.Size = new System.Drawing.Size(50, 13);
+            this.lblMatch.Size = new System.Drawing.Size(39, 13);
             this.lblMatch.TabIndex = 13;
-            this.lblMatch.Text = "✓ Match";
+            this.lblMatch.Text = "Match";
             // 
             // lblConPass
             // 
@@ -271,7 +271,7 @@
             this.tpageSectionRegistration.Location = new System.Drawing.Point(4, 22);
             this.tpageSectionRegistration.Name = "tpageSectionRegistration";
             this.tpageSectionRegistration.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageSectionRegistration.Size = new System.Drawing.Size(602, 416);
+            this.tpageSectionRegistration.Size = new System.Drawing.Size(623, 426);
             this.tpageSectionRegistration.TabIndex = 1;
             this.tpageSectionRegistration.Text = "Section Registration";
             this.tpageSectionRegistration.UseVisualStyleBackColor = true;
